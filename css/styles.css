@@ -701,7 +701,7 @@ pointer-events: none;
 .current:after,
 .link-footer,
 .button-menu,
-.input-check:checked + .icon-check,
+.input-check:checked + .icon-check::before,
 button
 {transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -750,7 +750,12 @@ letter-spacing: 0.01em;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   color: rgba(255, 255, 255, 0.6);
-}
+  
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  }
+
 .form-input::placeholder {
   color: rgba(255, 255, 255, 0.6);
   font-weight: 400;
@@ -815,6 +820,7 @@ color: var(--title-text-color);
 }
 
 .link-terms {
+  margin-left: 4px;
   font-weight: 400;
 font-size: 14px;
 line-height: 1.71;
@@ -838,7 +844,7 @@ border-radius: 4px;
   margin-top: 20px;
   margin-bottom: 30px;
 }
-.icon-check {
+/* .icon-check {
   display: inline-block;
   width: 16px;
   height: 15px;
@@ -854,7 +860,7 @@ border-radius: 4px;
   background-image: url('../images/check.svg');
   background-size: contain;
   background-origin: border-box;
-}
+} */
 
 .form-subscribe {
   display: block;
@@ -891,12 +897,7 @@ border-radius: 4px;
     height: 24px;
     text-align: center;}
 
-  .form-field-subscribe {
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  box-sizing: border-box;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-  border-radius: 4px;
-}
+  
 
 .form-subscribe input {
   margin: 0;
@@ -913,7 +914,7 @@ background: #2F303A;
   }
 
 .check-label {
-position: absolute;
+position: relative;
 display: flex;
 align-items: center;
 font-weight: normal;
@@ -929,3 +930,26 @@ color: #757575;
 appearance: none;
 position: absolute;
 } 
+.icon-check {
+      display: inline-flex;
+    align-items: center;
+    padding-right: 4px;
+}
+.icon-check::before {
+    content: "";
+    width: 16px;
+    height: 15px;
+    border-radius: 2px;
+    border: 2px solid black;
+    top: 0%;
+    background-color: var(--primary-bg-color);
+}
+
+
+.input-check:checked + .icon-check::before {
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+  background-image: url('../images/check.svg');
+  background-size: contain;
+  background-origin: border-box;
+}
