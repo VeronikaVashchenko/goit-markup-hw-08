@@ -1,3 +1,13 @@
+@font-face {
+  font-family: 'Roboto';
+  src: url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap");
+}
+
 body {
   background-color: #ffffff;
   color: #757575;
@@ -79,7 +89,7 @@ button {
   margin-bottom: 4px;
 }
 
-.portfolio-listt__text {
+.portfolio-list__text {
   color: #757575;
   font-weight: 400;
   font-size: 16px;
@@ -245,7 +255,6 @@ section {
   align-items: center;
   margin-right: 93px;
   font-family: Raleway, sans-serif;
-  font-family: Raleway;
   font-weight: 600;
   font-size: 26px;
   line-height: 1.19;
@@ -297,6 +306,7 @@ section {
   padding-bottom: 32px;
   color: #212121;
   background-color: #ffffff;
+  font-family: 'Roboto';
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -687,9 +697,5 @@ footer {
 
 .group {
   margin-bottom: 20px;
-}
-
-.comment {
-  padding: 0;
 }
 /*# sourceMappingURL=portfolio.css.map */
