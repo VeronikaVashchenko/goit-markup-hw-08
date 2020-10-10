@@ -27,7 +27,7 @@
         </a>
         
         <button type="button" class="menu-button" aria-expanded="false" aria-controls="menu-container" data-menu-button>
-          <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+          <svg class="menu-button__icon" aria-label="Переключатель мобильного меню">
             <use class="icon-close" href="./images/sprite.svg#icon-close"></use>
             <use class="icon-menu" href="./images/sprite.svg#icon-menu"></use>
           </svg>
@@ -544,10 +544,12 @@
                 name="policy"
                 id="policy"
               />
-              <span class="form__icon-check"></span>
-              Соглашаюсь с рассылкой и принимаю
-              <a class="link-terms" href="">Условия договора</a></label
-            >
+              <span>
+                <span class="form__icon-check"></span>
+                Соглашаюсь с рассылкой и принимаю
+                <a class="link-terms" href="">Условия договора</a>
+              </span>
+            </label>
           </div>
           <div class="form__button-wrapper">
             <button class="form__button-submit" type="submit">Отправить</button>
@@ -565,21 +567,5 @@
     <script src="./js/menu.js"></script>
     <script src="./js/modal.js"></script>
 
-    <!-- <script src="./js/modal.js"></script>
-    <script>
-      (() => {
-        document
-          .querySelector('.js-speaker-form')
-          .addEventListener('submit', e => {
-            e.preventDefault();
-
-            new FormData(e.currentTarget).forEach((value, name) =>
-              console.log(`${name}: ${value}`),
-            );
-
-            e.currentTarget.reset();
-          });
-      })();
-    </script> -->
   </body>
 </html>

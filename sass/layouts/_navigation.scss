@@ -1,6 +1,7 @@
 .navigation {
   display: flex;
   align-items: center;
+  justify-content: center;
   margin-right: auto;
 
   &__webstudio-header {
@@ -9,7 +10,7 @@
 
     font-family: Raleway, sans-serif;
     font-weight: 600;
-    font-size: 26px;
+    font-size: 24px;
     line-height: 1.19;
     letter-spacing: 0.03em;
 
@@ -26,10 +27,16 @@
 @media screen and (min-width: 768px) {
   .navigation {
     &__webstudio-header {
-      margin-right: 93px;
+      margin-right: 80px;
     }
   }
 }
 
-@media screen and (min-width: 480px) and (max-width: 768px) {
+@media screen and (min-width: 1200px) {
+  .navigation {
+    &__webstudio-header {
+      font-size: 26px;
+      margin-right: 93px;
+    }
+  }
 }

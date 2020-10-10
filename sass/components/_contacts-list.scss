@@ -1,8 +1,10 @@
 .contacts-list {
   display: flex;
+  flex-direction: column;
   align-items: center;
   align-content: center;
-  margin: -5px 69px;
+  justify-content: center;
+  margin: -8px -15px;
 
   &__icon {
     margin-right: 10px;
@@ -31,7 +33,7 @@
   &__item,
   &__item-mail {
     display: flex;
-    margin: 5px 15px;
+    margin: 8px 15px;
   }
 
   &__item-mail:hover &__link,
@@ -48,6 +50,13 @@
   .contacts-list {
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: flex-start;
+    margin: -6px -15px -6px 54px;
+
+    &__item,
+    &__item-mail {
+      margin: 6px 15px;
+    }
   }
 }
 
