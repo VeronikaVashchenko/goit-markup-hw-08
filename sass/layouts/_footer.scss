@@ -4,14 +4,21 @@ footer {
   text-decoration: none;
   font-style: normal;
 }
+
 .footer-box {
   display: flex;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 90px;
+  padding-bottom: 90px;
+  margin: -30px auto;
 }
 
 .footer-address {
   display: block;
+  margin: 30px 0;
+  text-align: center;
 
   &__contacts &__link {
     margin-top: 9px;
@@ -38,6 +45,7 @@ footer {
   &__logo {
     color: $accent-color;
   }
+
   &__contacts {
     color: $primary-bg-color;
     font-weight: 400;
@@ -63,8 +71,8 @@ footer {
 
 .join {
   display: block;
-  margin-top: 12px;
-  margin-left: 70px;
+  margin: 30px 0;
+  text-align: center;
 
   &__title {
     align-items: baseline;
@@ -75,5 +83,20 @@ footer {
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer-box {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .footer-address {
+    text-align: left;
+  }
+
+  .join {
+    text-align: left;
   }
 }

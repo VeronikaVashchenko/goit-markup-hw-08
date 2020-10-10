@@ -1,26 +1,25 @@
 .command-section {
   background-color: $secondary-bg-color;
-  padding-top: 94px;
+  padding-top: 60px;
   text-align: center;
 }
 
 .command-list {
   display: flex;
+  flex-direction: column;
+  margin: -15px -15px;
 
   &__item {
-    width: calc((100% - 30px * 2) / 4);
-    margin-right: 30px;
-    margin-left: 0;
-    margin-top: 0;
-    margin-bottom: 0;
+    margin: 15px 15px;
 
     background: $primary-bg-color;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
   }
-  &__item:nth-child(4n) {
-    margin-right: 0;
+
+  &__photo {
+    max-width: 100%;
   }
 
   &__card {
@@ -50,5 +49,49 @@
     margin-bottom: 16px;
     margin-top: 0;
     text-align: center;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .command {
+    &-list {
+      flex-wrap: wrap;
+    }
+
+    &-list__item {
+      width: calc((100% - 4 * 15px) / 2);
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .command-section {
+    padding-top: 94px;
+  }
+
+  .command {
+    &-list {
+      flex-wrap: nowrap;
+    }
+
+    &-list__item {
+      width: auto;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .command {
+    &-list {
+      flex-direction: row;
+    }
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  .command {
+    &-list {
+      flex-wrap: wrap;
+    }
   }
 }

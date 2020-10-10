@@ -1,5 +1,12 @@
 section {
-  padding-bottom: 94px;
+  // padding-bottom: 94px;
+  // padding-bottom: 60px;
+  @media screen and (max-width: 1199px) {
+    padding-bottom: 60px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 94px;
+  }
 }
 .section__title {
   color: $title-text-color;
@@ -8,5 +15,12 @@ section {
   line-height: 1.17;
   text-align: center;
   margin-top: 0px;
-  margin-bottom: 50px;
+  // margin-bottom: 50px;
+  // margin-bottom: 30px;
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
 }

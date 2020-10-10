@@ -1,5 +1,16 @@
+.activities-section {
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
+}
 .activities {
-  display: flex;
+  // display: flex;
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
 
   &__item {
     width: calc((100% - 30px * 2) / 3);
