@@ -140,36 +140,48 @@
           <h2 class="section__title">Чем мы занимаемся</h2>
           <ul class="activities list">
             <li class="activities__item">
-              <a class="activities__link" href=""
-                ><img
+              <a class="activities__link" href="">
+                <picture>
+                  <source srcset="./images/img_x1.jpg 1x,
+                                 ./images/img_x2.jpg 2x">
+                <img
                   src="./images/img.jpg"
                   alt="Программирование"
                   width="370"
                 />
+                </picture>
                 <div class="activities__text-box">
                   <p class="activities__text">Десктопные приложения</p>
                 </div>
               </a>
             </li>
             <li class="activities__item">
-              <a class="activities__link" href=""
-                ><img
-                  src="./images/img1.jpg"
-                  alt="Разработка приложений для смартфонов"
-                  width="370"
-                />
+              <a class="activities__link" href="">
+                <picture>
+                  <source srcset="./images/img1_x1.jpg 1x,
+                          ./images/img1_x2.jpg 2x" >
+                  <img
+                    src="./images/img1.jpg"
+                    alt="Разработка приложений для смартфонов"
+                    width="370"
+                  />
+                </picture>
                 <div class="activities__text-box">
                   <p class="activities__text">Мобильные приложения</p>
                 </div>
               </a>
             </li>
             <li class="activities__item">
-              <a class="activities__link" href=""
-                ><img src="./images/img2.jpg" alt="Веб-дизайн" width="370" />
+              <a class="activities__link" href="">
+                <picture>
+                  <source srcset="./images/img2_x1.jpg 1x,
+                                  ./images/img2_x2.jpg 2x">
+                <img src="./images/img2.jpg" alt="Веб-дизайн" width="370" />
+                </picture>
                 <div class="activities__text-box">
                   <p class="activities__text">Дизайнерские решения</p>
-                </div></a
-              >
+                </div>
+              </a>
             </li>
           </ul>
         </div>
@@ -180,7 +192,11 @@
           <h2 class="section__title">Наша команда</h2>
           <ul class="command-list list">
             <li class="command-list__item">
+              <picture>
+                <source srcset="./images/igor_x1.jpg 1x,
+                                ./images/igor_x2.jpg 2x">
               <img class="command-list__photo" src="./images/igor.jpg" alt="Игорь Демьяненко" />
+              </picture>
               <div class="command-list__card">
                 <h3 class="command-list__title">Игорь Демьяненко</h3>
                 <p class="command-list__text">Product Designer</p>
@@ -217,7 +233,11 @@
               </div>
             </li>
             <li class="command-list__item">
+              <picture>
+              <source srcset="./images/olga_x1.jpg 1x,
+                              ./images/olga_x2.jpg 2x">
               <img class="command-list__photo" src="./images/olga.jpg" alt="Ольга Репина" />
+              </picture>
               <div class="command-list__card">
                 <h3 class="command-list__title">Ольга Репина</h3>
                 <p class="command-list__text">Frontend Developer</p>
@@ -255,11 +275,13 @@
             </li>
 
             <li class="command-list__item">
-              <img
-                class="command-list__photo" 
+              <picture>
+                <source srcset="./images/nikolay_x1.jpg 1x,
+                                ./images/nikolay_x2.jpg 2x">
+              <img class="command-list__photo" 
                 src="./images/nikolay.jpg"
-                alt="Николай Тарасов"
-              />
+                alt="Николай Тарасов"/>
+              </picture>
               <div class="command-list__card">
                 <h3 class="command-list__title">Николай Тарасов</h3>
                 <p class="command-list__text">Marketing</p>
@@ -297,11 +319,15 @@
             </li>
 
             <li class="command-list__item">
+              <picture>
+                <source srcset="./images/mihail_x1.jpg 1x,
+                                ./images/mihail_x2.jpg 2x">
               <img 
                 class="command-list__photo" 
                 src="./images/mihail.jpg" 
                 alt="Михаил Ермаков"
               />
+              </picture>
               <div class="command-list__card">
                 <h3 class="command-list__title">Михаил Ермаков</h3>
                 <p class="command-list__text">UI Designer</p>
@@ -544,7 +570,7 @@
                 name="policy"
                 id="policy"
               />
-              <span>
+              <span class="form__label-text">
                 <span class="form__icon-check"></span>
                 Соглашаюсь с рассылкой и принимаю
                 <a class="link-terms" href="">Условия договора</a>

@@ -15,6 +15,13 @@
       rgba(47, 48, 58, 0.4)
     ),
     url('../images/hero.jpg');
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    -webkit-image-set(url('../images/hero_x1.jpg') 1x, url('../images/hero_x2.jpg')
+          2x);
 
   background-repeat: no-repeat;
   background-position: center;

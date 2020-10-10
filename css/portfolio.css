@@ -774,7 +774,7 @@ footer {
   display: flex;
   align-items: center;
   font-weight: normal;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #757575;
@@ -810,18 +810,21 @@ footer {
 }
 
 .form__icon-check {
+  position: relative;
   display: inline-flex;
   align-items: center;
   padding-right: 4px;
+  width: 16px;
 }
 
 .form__icon-check::before {
+  position: absolute;
   content: '';
   width: 16px;
   height: 15px;
   border-radius: 2px;
   border: 2px solid black;
-  top: 0%;
+  bottom: calc(100% - 2px);
   background-color: #ffffff;
 }
 
@@ -832,7 +835,7 @@ footer {
   position: absolute;
 }
 
-.form__input-check:checked + .form__icon-check::before {
+.form__input-check:checked + .form__label-text .form__icon-check::before {
   background-color: #2196f3;
   border-color: #2196f3;
   background-image: url("../images/check.svg");
@@ -859,7 +862,9 @@ footer {
 }
 
 .form-subscribe__submit {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 10px 6px;
   text-align: center;
   width: 200px;
@@ -908,7 +913,7 @@ footer {
 .link-terms {
   margin-left: 4px;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   text-decoration-line: underline;
@@ -923,6 +928,12 @@ footer {
   .form-subscribe {
     text-align: left;
     margin: 30px 0;
+  }
+  .form__check-label {
+    font-size: 14px;
+  }
+  .link-terms {
+    font-size: 14px;
   }
 }
 /*# sourceMappingURL=portfolio.css.map */
