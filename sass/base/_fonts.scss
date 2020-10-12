@@ -1,0 +1,43 @@
+@font-face {
+  font-family: 'Roboto';
+  src: url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
+}
+
+$logo-font-family: 'Raleway', sans-serif;
+$text-font-family: 'Roboto', sans-serif;
+
+$normal-font-weight: 400;
+$medium-font-weight: 500;
+$semi-bold-font-weight: 700;
+$bold-font-weight: 900;
+
+$font-size-twelve: 12px;
+$font-size-fourteen: 14px;
+$font-size-sixteen: 16px;
+$font-size-eightteen: 18px;
+$form-title-font-size: 20px;
+$logo-font-size: 26px;
+$h2-font-size: 36px;
+$hero-font-size: 44px;
+
+$line-height-fourteen: 1.14;
+$line-height-fifteen: 1.15;
+$line-height-seventeen: 1.17;
+$line-height-nineteen: 1.19;
+$line-height-twenty-five: 1.25;
+$line-height-seventy-one: 1.71;
+$line-height-six: 1.6;
+$line-height-thirty-six: 1.36;
+$line-height-fifty-six: 1.56;
+$line-height-eighty-seven: 1.87;
+$line-height-two: 2;
+
+$letter-spacing-one: 0.01em;
+$letter-spacing-two: 0.02em;
+$letter-spacing-three: 0.03em;
+$letter-spacing-six: 0.06em;

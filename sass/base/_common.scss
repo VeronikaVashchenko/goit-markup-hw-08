@@ -1,8 +1,8 @@
 body {
   background-color: $primary-bg-color;
   color: $primary-text-color;
-  font-family: Roboto, sans-serif;
-  letter-spacing: 0.03em;
+  font-family: $text-font-family;
+  letter-spacing: $letter-spacing-three;
 }
 
 .list {
@@ -30,6 +30,7 @@ html {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+  overflow: hidden;
 
   @media screen and (min-width: 768px) {
     width: 768px;
@@ -41,10 +42,10 @@ html {
 }
 button {
   font-family: inherit;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.6;
-  letter-spacing: 0.03em;
+  font-weight: $medium-font-weight;
+  font-size: $font-size-sixteen;
+  line-height: $line-height-six;
+  letter-spacing: $letter-spacing-three;
   border-style: none;
   border-radius: 4px;
   padding: 6px 22px;

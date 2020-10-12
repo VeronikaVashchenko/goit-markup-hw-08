@@ -18,20 +18,20 @@
 
   &__field-label {
     margin-bottom: 4px;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 1.17;
-    letter-spacing: 0.01em;
+    font-weight: $normal-font-weight;
+    font-size: $font-size-twelve;
+    line-height: $line-height-fifteen;
+    letter-spacing: $letter-spacing-one;
   }
 
   &__title {
     margin-top: 0;
     margin-bottom: 12px;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 1.15;
+    font-weight: $semi-bold-font-weight;
+    font-size: $form-title-font-size;
+    line-height: $line-height-fifteen;
     text-align: center;
-    letter-spacing: 0.03em;
+    letter-spacing: $letter-spacing-three;
     color: $title-text-color;
   }
 
@@ -88,10 +88,10 @@
 
     &::placeholder {
       color: rgba(255, 255, 255, 0.6);
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 1.25;
-      letter-spacing: 0.03em;
+      font-weight: $normal-font-weight;
+      font-size: $font-size-sixteen;
+      line-height: $line-height-twenty-five;
+      letter-spacing: $letter-spacing-three;
     }
   }
 
@@ -105,19 +105,19 @@
     display: flex;
     align-items: center;
     font-weight: normal;
-    font-size: 12px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: #757575;
+    font-size: $font-size-twelve;
+    line-height: $line-height-seventy-one;
+    letter-spacing: $letter-spacing-three;
+    color: $primary-text-color;
   }
 
   &__field-textarea {
     padding: 12px 16px;
 
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.01em;
+    font-weight: $normal-font-weight;
+    font-size: $font-size-fourteen;
+    line-height: $line-height-fourteen;
+    letter-spacing: $letter-spacing-one;
 
     color: rgba(117, 117, 117, 0.5);
     border: 1px solid rgba(33, 33, 33, 0.2);
@@ -204,7 +204,7 @@
     width: 200px;
     height: 50px;
     color: $primary-bg-color;
-    background: #188ce8;
+    background: $accent-color;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
   }
@@ -220,10 +220,10 @@
     align-items: baseline;
     margin-top: 0;
     margin-bottom: 20px;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
+    font-weight: $semi-bold-font-weight;
+    font-size: $font-size-fourteen;
+    line-height: $line-height-fourteen;
+    letter-spacing: $letter-spacing-three;
     text-transform: uppercase;
   }
 
@@ -241,19 +241,19 @@
     background: #2f303a;
 
     font-weight: normal;
-    font-size: 16px;
-    line-height: 1.25;
-    letter-spacing: 0.03em;
+    font-size: $font-size-sixteen;
+    line-height: $line-height-twenty-five;
+    letter-spacing: $letter-spacing-three;
     color: rgba(255, 255, 255, 0.6);
   }
 }
 
 .link-terms {
   margin-left: 4px;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
+  font-weight: $normal-font-weight;
+  font-size: $font-size-twelve;
+  line-height: $line-height-seventy-one;
+  letter-spacing: $letter-spacing-three;
   text-decoration-line: underline;
   color: $accent-color;
 }
@@ -261,6 +261,19 @@
 .group {
   margin-bottom: 20px;
 }
+
+// @media screen and (min-width: 768px) and (max-width: 1199px) {
+//   .form-subscribe {
+//     display: inline-table;
+//     text-align: center;
+//   }
+//   .subscribe {
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     align-items: center;
+//   }
+// }
 
 @media screen and (min-width: 1200px) {
   .form-subscribe {
@@ -270,11 +283,11 @@
 
   .form {
     &__check-label {
-      font-size: 14px;
+      font-size: $font-size-fourteen;
     }
   }
 
   .link-terms {
-    font-size: 14px;
+    font-size: $font-size-fourteen;
   }
 }

@@ -12,12 +12,11 @@ footer {
   justify-content: center;
   padding-top: 90px;
   padding-bottom: 90px;
-  margin: -30px auto;
-}
+  overflow: hidden;
+  }
 
 .footer-address {
   display: block;
-  margin: 30px 0;
   text-align: center;
 
   &__contacts &__link {
@@ -25,13 +24,12 @@ footer {
   }
 
   &__webstudio {
-    font-family: Raleway, sans-serif;
-    font-family: Raleway;
+    font-family: $logo-font-family;
     font-style: normal;
     font-weight: bold;
-    font-size: 26px;
-    line-height: 1.19;
-    letter-spacing: 0.03em;
+    font-size: $logo-font-size;
+    line-height: $line-height-nineteen;
+    letter-spacing: $letter-spacing-three;
   }
 
   &__webstudio,
@@ -48,9 +46,9 @@ footer {
 
   &__contacts {
     color: $primary-bg-color;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
+    font-weight: $normal-font-weight;
+    font-size: $font-size-fourteen;
+    line-height: $line-height-seventy-one;
     font-style: normal;
     margin-top: 20px;
 
@@ -78,10 +76,10 @@ footer {
     align-items: baseline;
     margin-top: 0;
     margin-bottom: 20px;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
+    font-weight: $semi-bold-font-weight;
+    font-size: $font-size-fourteen;
+    line-height: $line-height-fourteen;
+    letter-spacing: $letter-spacing-three;
     text-transform: uppercase;
   }
 }
@@ -93,10 +91,40 @@ footer {
   }
 
   .footer-address {
+    text-align: center;
+  }
+
+  .join {
+    text-align: center;
+    margin: 0;
+  }
+  .form-subscribe {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 32px;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-box {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .footer-address {
+    margin: 20px 0;
     text-align: left;
   }
 
   .join {
     text-align: left;
+    margin: 30px 0;
+  }
+
+  .form-subscribe {
+    padding: 0;
   }
 }

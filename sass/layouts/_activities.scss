@@ -36,10 +36,10 @@
     justify-content: center;
     align-items: center;
 
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
+    font-weight: $semi-bold-font-weight;
+    font-size: $font-size-fourteen;
+    line-height: $line-height-fourteen;
+    letter-spacing: $letter-spacing-three;
     text-transform: uppercase;
 
     color: $primary-bg-color;

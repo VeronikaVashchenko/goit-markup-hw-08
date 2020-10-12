@@ -8,11 +8,11 @@
     display: flex;
     align-items: center;
 
-    font-family: Raleway, sans-serif;
+    font-family: $logo-font-family;
     font-weight: 600;
     font-size: 24px;
-    line-height: 1.19;
-    letter-spacing: 0.03em;
+    line-height: $line-height-nineteen;
+    letter-spacing: $letter-spacing-three;
 
     color: $title-text-color;
     background-color: $primary-bg-color;
@@ -35,7 +35,7 @@
 @media screen and (min-width: 1200px) {
   .navigation {
     &__webstudio-header {
-      font-size: 26px;
+      font-size: $logo-font-size;
       margin-right: 93px;
     }
   }

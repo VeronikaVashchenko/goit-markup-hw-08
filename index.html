@@ -4,8 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <title>Студия</title>
-    <link
+    <!-- <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    /> -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
     <link
@@ -19,20 +27,28 @@
 
   <body>
     <!-- Хедер -->
-    <header class="header">
+    <header class="header is-open">
       <div class="container main-nav">
-
         <a class="navigation__webstudio-header" href="">
           <span class="navigation__logo">Web</span>Studio
         </a>
-        
-        <button type="button" class="menu-button" aria-expanded="false" aria-controls="menu-container" data-menu-button>
-          <svg class="menu-button__icon" aria-label="Переключатель мобильного меню">
+
+        <button
+          type="button"
+          class="menu-button"
+          aria-expanded="false"
+          aria-controls="menu-container"
+          data-menu-button
+        >
+          <svg
+            class="menu-button__icon"
+            aria-label="Переключатель мобильного меню"
+          >
             <use class="icon-close" href="./images/sprite.svg#icon-close"></use>
             <use class="icon-menu" href="./images/sprite.svg#icon-menu"></use>
           </svg>
         </button>
-        
+
         <div class="menu-container" id="menu-container" data-menu>
           <nav class="navigation">
             <ul class="site-nav list">
@@ -67,7 +83,6 @@
             </li>
           </ul>
         </div>
-        
       </div>
     </header>
     <main>
@@ -131,7 +146,6 @@
               </p>
             </li>
           </ul>
-          </div>
         </div>
       </section>
       <!-- Чем мы занимаемся -->
@@ -142,13 +156,14 @@
             <li class="activities__item">
               <a class="activities__link" href="">
                 <picture>
-                  <source srcset="./images/img_x1.jpg 1x,
-                                 ./images/img_x2.jpg 2x">
-                <img
-                  src="./images/img.jpg"
-                  alt="Программирование"
-                  width="370"
-                />
+                  <source
+                    srcset="./images/img_x1.jpg 1x, ./images/img_x2.jpg 2x"
+                  />
+                  <img
+                    src="./images/img.jpg"
+                    alt="Программирование"
+                    width="370"
+                  />
                 </picture>
                 <div class="activities__text-box">
                   <p class="activities__text">Десктопные приложения</p>
@@ -158,8 +173,9 @@
             <li class="activities__item">
               <a class="activities__link" href="">
                 <picture>
-                  <source srcset="./images/img1_x1.jpg 1x,
-                          ./images/img1_x2.jpg 2x" >
+                  <source
+                    srcset="./images/img1_x1.jpg 1x, ./images/img1_x2.jpg 2x"
+                  />
                   <img
                     src="./images/img1.jpg"
                     alt="Разработка приложений для смартфонов"
@@ -174,9 +190,10 @@
             <li class="activities__item">
               <a class="activities__link" href="">
                 <picture>
-                  <source srcset="./images/img2_x1.jpg 1x,
-                                  ./images/img2_x2.jpg 2x">
-                <img src="./images/img2.jpg" alt="Веб-дизайн" width="370" />
+                  <source
+                    srcset="./images/img2_x1.jpg 1x, ./images/img2_x2.jpg 2x"
+                  />
+                  <img src="./images/img2.jpg" alt="Веб-дизайн" width="370" />
                 </picture>
                 <div class="activities__text-box">
                   <p class="activities__text">Дизайнерские решения</p>
@@ -193,9 +210,14 @@
           <ul class="command-list list">
             <li class="command-list__item">
               <picture>
-                <source srcset="./images/igor_x1.jpg 1x,
-                                ./images/igor_x2.jpg 2x">
-              <img class="command-list__photo" src="./images/igor.jpg" alt="Игорь Демьяненко" />
+                <source
+                  srcset="./images/igor_x1.jpg 1x, ./images/igor_x2.jpg 2x"
+                />
+                <img
+                  class="command-list__photo"
+                  src="./images/igor.jpg"
+                  alt="Игорь Демьяненко"
+                />
               </picture>
               <div class="command-list__card">
                 <h3 class="command-list__title">Игорь Демьяненко</h3>
@@ -234,9 +256,14 @@
             </li>
             <li class="command-list__item">
               <picture>
-              <source srcset="./images/olga_x1.jpg 1x,
-                              ./images/olga_x2.jpg 2x">
-              <img class="command-list__photo" src="./images/olga.jpg" alt="Ольга Репина" />
+                <source
+                  srcset="./images/olga_x1.jpg 1x, ./images/olga_x2.jpg 2x"
+                />
+                <img
+                  class="command-list__photo"
+                  src="./images/olga.jpg"
+                  alt="Ольга Репина"
+                />
               </picture>
               <div class="command-list__card">
                 <h3 class="command-list__title">Ольга Репина</h3>
@@ -276,11 +303,17 @@
 
             <li class="command-list__item">
               <picture>
-                <source srcset="./images/nikolay_x1.jpg 1x,
-                                ./images/nikolay_x2.jpg 2x">
-              <img class="command-list__photo" 
-                src="./images/nikolay.jpg"
-                alt="Николай Тарасов"/>
+                <source
+                  srcset="
+                    ./images/nikolay_x1.jpg 1x,
+                    ./images/nikolay_x2.jpg 2x
+                  "
+                />
+                <img
+                  class="command-list__photo"
+                  src="./images/nikolay.jpg"
+                  alt="Николай Тарасов"
+                />
               </picture>
               <div class="command-list__card">
                 <h3 class="command-list__title">Николай Тарасов</h3>
@@ -320,13 +353,14 @@
 
             <li class="command-list__item">
               <picture>
-                <source srcset="./images/mihail_x1.jpg 1x,
-                                ./images/mihail_x2.jpg 2x">
-              <img 
-                class="command-list__photo" 
-                src="./images/mihail.jpg" 
-                alt="Михаил Ермаков"
-              />
+                <source
+                  srcset="./images/mihail_x1.jpg 1x, ./images/mihail_x2.jpg 2x"
+                />
+                <img
+                  class="command-list__photo"
+                  src="./images/mihail.jpg"
+                  alt="Михаил Ермаков"
+                />
               </picture>
               <div class="command-list__card">
                 <h3 class="command-list__title">Михаил Ермаков</h3>
@@ -592,6 +626,5 @@
 
     <script src="./js/menu.js"></script>
     <script src="./js/modal.js"></script>
-
   </body>
 </html>

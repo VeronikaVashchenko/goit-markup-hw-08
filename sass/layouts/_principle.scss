@@ -25,24 +25,13 @@
 
   &__item {
     margin: 15px;
-    // width: calc((100% - 30px * 2) / 4);
-    // margin-right: 30px;
-    // margin-left: 0;
-    // margin-top: 0;
-    // margin-bottom: 0;
-
-    @media screen and (min-width: 480px) {
-      &:nth-child(4n) {
-        margin-bottom: 0;
-      }
-    }
   }
 
   &__title {
     color: $title-text-color;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
+    font-weight: $semi-bold-font-weight;
+    font-size: $font-size-fourteen;
+    line-height: $line-height-fourteen;
     text-transform: uppercase;
     margin-top: 30px;
     margin-bottom: 10px;
@@ -50,9 +39,9 @@
   }
 
   &__text {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
+    font-weight: $normal-font-weight;
+    font-size: $font-size-fourteen;
+    line-height: $line-height-seventy-one;
     margin-bottom: 0;
     margin-top: 0;
   }

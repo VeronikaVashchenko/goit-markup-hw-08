@@ -7,11 +7,11 @@
     position: relative;
     color: $title-text-color;
     background-color: $primary-bg-color;
-    font-family: 'Roboto';
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
+    font-family: $text-font-family;
+    font-weight: $medium-font-weight;
+    font-size: $font-size-fourteen;
+    line-height: $line-height-fourteen;
+    letter-spacing: $letter-spacing-two;
     text-decoration: none;
 
     transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);

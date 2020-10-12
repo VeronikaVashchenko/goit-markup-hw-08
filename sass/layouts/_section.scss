@@ -10,9 +10,9 @@ section {
 }
 .section__title {
   color: $title-text-color;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
+  font-weight: $semi-bold-font-weight;
+  font-size: $h2-font-size;
+  line-height: $line-height-fifteen;
   text-align: center;
   margin-top: 0px;
   // margin-bottom: 50px;
